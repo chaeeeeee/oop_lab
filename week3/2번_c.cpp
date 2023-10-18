@@ -5,9 +5,6 @@ class Dice {
 private:
 	int face;
 public:
-	Dice() {
-		roll();
-	}
 	void roll() {
 		face = rand() % 6 + 1;
 	}
