@@ -23,15 +23,15 @@ public:
         cout << "Width: " << width << " Height: " << height << " Area: " << area << endl;
     }  
 };
-int calcArea(Rect* r) { 
+int calcArea(Rect* r) { //외부 함수
     return r->getWidth() * r->getHeight();
 }
 int main() {
 
-    Rect* r = new Rect(); 
+    Rect* r = new Rect(); //사각형 객체를 가리키는데 사용될 수 있는 포인터 r
 
-    r->setWidth(10);  
-    r->setHeight(20);
+    r->setWidth(10);   //r이 가리키는 객체의 폭과 높이를 각각 10, 20으로 설정
+    r->setHeight(20);  //r이 가리키는 객체의 폭과 높이를 각각 10, 20으로 설정
     r->setArea(calcArea(r)); 
 
     r->display(); 
