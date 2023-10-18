@@ -27,7 +27,7 @@ public:
 		cout << "Donuts Area: " << area << endl;
 	}
 };
-void update(Circle c) { //값 호출이기 때문에 도넛 크기가 2배가 안됨 (참조 호출 해야 도너 크기 2배 됨)
+void update(Circle c) { //값 호출이기 때문에 도넛 크기가 2배가 안됨 (참조 호출 해야 도넛 크기 2배 됨)
 	int newRadius = c.getRadius() * 2;
 	c.setRadius(newRadius);
 }
