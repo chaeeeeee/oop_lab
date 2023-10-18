@@ -17,12 +17,12 @@ public:
     }    
 };
 int main() {
-    Circle arrCir[3];
+    Circle arrCir[3];    //생성자 3회 호출 + 소멸자 3회 호출 (배열 소멸되면서)
 
-    for (Circle c : arrCir)
+    for (Circle c : arrCir)    //소멸자 3회 호출
         c.radius = rand() % 100 + 1;
 
-    for (Circle c : arrCir)
+    for (Circle c : arrCir)    //소멸자 3회 호출
         c.print();
 
     return 0;
