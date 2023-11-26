@@ -26,7 +26,7 @@ public:
             data[++top] = item;
         }
         else {
-            cerr << "스택이 꽉 차있습니다." << endl;
+            cout << "스택이 꽉 차있습니다." << endl;
         }
     }
 
@@ -35,7 +35,7 @@ public:
             return data[top--];
         }
         else {
-            cerr << "스택이 비어있습니다." << endl;
+            cout << "스택이 비어있습니다." << endl;
             return T();
         }
     }
@@ -45,7 +45,7 @@ public:
             return data[top];
         }
         else {
-            cerr << "스택이 비어있습니다." << endl;
+            cout << "스택이 비어있습니다." << endl;
             return T();
         }
     }
