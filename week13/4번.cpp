@@ -26,15 +26,6 @@ T larger(T a, T b) {
     return (a > b) ? a : b; 
 }
 
-string larger(Circle& a, Circle& b) {
-    if (a.getRadius() >= b.getRadius()) {
-        return a.getName();
-    }
-    else {
-        return b.getName();
-    }
-}
-
 int main() {
     cout << larger(5, 6) << endl;
     cout << larger('A', 'B') << endl;
